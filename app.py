@@ -1,6 +1,6 @@
 #Dependencies
 import os
-from apikey import apikey
+from st.secrets import OPENAI_API_KEY 
 
 import streamlit as st
 from langchain.llms import OpenAI
