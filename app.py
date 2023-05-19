@@ -8,9 +8,8 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
-from st.secrets import OPENAI_API_KEY 
 
-os.environ['OPENAI_API_KEY'] = apikey
+os.environ['OPENAI_API_KEY'] = st.secrets['path']
 
 # App framework
 st.title('🦜🔗 YouTube GPT Creator')
