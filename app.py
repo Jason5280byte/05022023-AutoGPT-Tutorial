@@ -1,6 +1,6 @@
 #Dependencies
 import os
-from st.secrets import OPENAI_API_KEY 
+
 
 import streamlit as st
 from langchain.llms import OpenAI
@@ -8,6 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
+from st.secrets import OPENAI_API_KEY 
 
 os.environ['OPENAI_API_KEY'] = apikey
 
