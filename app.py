@@ -12,7 +12,7 @@ from langchain.utilities import WikipediaAPIWrapper
 os.environ['OPENAI_API_KEY'] = st.secrets['path']
 
 # App framework
-st.title('The Motivational Poet')
+st.title('🧘🏾‍♂️ The Motivational Poet')
 prompt = st.text_input('What is your favorite emotion?') 
 
 # Prompt templates
